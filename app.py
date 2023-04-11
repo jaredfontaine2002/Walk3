@@ -28,7 +28,7 @@ server = app.server
 
 
 app.layout = html.Div([
-
+ html.H1("Bear Attack Dashboard", style={'text-align': 'center'})
 ])
 
 
