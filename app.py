@@ -26,7 +26,6 @@ server = app.server
 # Import and clean data (importing  csv into pandas)
 
 
-import dash_html_components as html
 
 app.layout = html.Div([
 
