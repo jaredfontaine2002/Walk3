@@ -4,3 +4,4 @@ pandas
 walkscore_api==1.0.1
 gunicorn==19.7.1
 urllib3
+requests
