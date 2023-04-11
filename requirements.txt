@@ -3,4 +3,4 @@ dash_bootstrap_components
 pandas
 walkscore_api==1.0.1
 gunicorn==19.7.1
-urlib
+urllib3
