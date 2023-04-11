@@ -76,7 +76,7 @@ fig.show()
 
 
 if __name__ == '__app__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, HOST="0.0.0.0", port=8080)
 
 
 # This is a sample Python script.
