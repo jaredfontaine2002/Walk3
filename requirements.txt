@@ -1,5 +1,5 @@
 dash
-dash_bootstrap_component==1.4.1
+dash_bootstrap_component
 pandas
 walkscore_api==1.0.1
 gunicorn==19.7.1
