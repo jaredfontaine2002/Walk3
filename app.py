@@ -58,12 +58,16 @@ df5['address'] = df5['address'].shift(-1)
 df6=df5.drop('original_coordinates', axis ='rows')
 walk_ad = result.to_dict()
 
+app.lyout = html.Div([
+
 fig = px.scatter_mapbox(df5, lat='latitude', lon='longitude', hover_name="address", hover_data=["score", "description"],
                             color_discrete_sequence=["fuchsia"], zoom=15, height=500,
                               )
                             #color='Type of bear', zoom=3=10, height=500)
 fig.update_layout(mapbox_style="open-street-map",title='Ebike Score: Hover over the fushia point to see the bike score and description of the property.')
 fig.update_layout(margin={"r": 100, "t": 100, "l": 10, "b": 10})
+  
+])
 fig.show()
 
 
