@@ -2,6 +2,7 @@ import dash  # (version 1.12.0) pip install dash
 import dash_bootstrap_components as dbc
 import pandas as pd
 import plotly.express as px  # (version 4.7.0)
+import dash_html_components as html
 
 
 from walkscore import WalkScoreAPI\
@@ -25,9 +26,11 @@ server = app.server
 # Import and clean data (importing  csv into pandas)
 
 
+import dash_html_components as html
 
+app.layout = html.Div([
 
-
+])
 
 
 score = WalkScoreAPI(api_key=API_KEY)
@@ -67,9 +70,9 @@ fig = px.scatter_mapbox(df5, lat='latitude', lon='longitude', hover_name="addres
 fig.update_layout(mapbox_style="open-street-map",title='Ebike Score: Hover over the fushia point to see the bike score and description of the property.')
 fig.update_layout(margin={"r": 100, "t": 100, "l": 10, "b": 10})
   
-app.layout = html.Div([
+
 fig.show()
-])
+
 
 
 
