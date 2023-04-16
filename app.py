@@ -5,7 +5,7 @@ import plotly.express as px  # (version 4.7.0)
 from dash import html
 
 
-from walkscore import WalkScoreAPI\
+from walkscore import WalkScoreAPI
 
 
 API_KEY = '62c5d8bc355352b5fe686514763ed6cc'
