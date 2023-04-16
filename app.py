@@ -2,7 +2,7 @@ import dash  # (version 1.12.0) pip install dash
 import dash_bootstrap_components as dbc
 import pandas as pd
 import plotly.express as px  # (version 4.7.0)
-from dash import html
+from dash import dcc, html
 
 
 from walkscore import WalkScoreAPI
@@ -28,7 +28,11 @@ server = app.server
 
 
 app.layout = html.Div([
- html.H1("Bear Attack Dashboard", style={'text-align': 'center'})
+ html.H1("Walkscore search", style={'text-align': 'center'})
+  dcc.Graph(
+        id='walk',
+        figure=fig
+    )
 ])
 
 
