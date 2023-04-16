@@ -28,14 +28,6 @@ server = app.server
 
 
 
-app.layout = html.Div([
- html.H1("Walkscore search", style={'text-align': 'center'}),
-  dcc.Graph(
-        id='walk',
-        figure=fig
-    )
-])
-
 
 score = WalkScoreAPI(api_key=API_KEY)
 
@@ -76,6 +68,14 @@ fig.update_layout(margin={"r": 100, "t": 100, "l": 10, "b": 10})
   
 
 fig.show()
+
+app.layout = html.Div([
+ html.H1("Walkscore search", style={'text-align': 'center'}),
+  dcc.Graph(
+        id='walk',
+        figure=fig
+    )
+])
 
 
 
