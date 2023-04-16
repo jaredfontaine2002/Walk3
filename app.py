@@ -29,7 +29,7 @@ server = app.server
 
 
 app.layout = html.Div([
- html.H1("Walkscore search", style={'text-align': 'center'})
+ html.H1("Walkscore search", style={'text-align': 'center'}),
   dcc.Graph(
         id='walk',
         figure=fig
